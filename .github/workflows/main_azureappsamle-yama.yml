@@ -29,6 +29,6 @@ jobs:
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'azureappsamle-yama'
+        app-name: 'familyDevelopsApps'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bb9f8110cdf34c08af9865b3c8923ab0 }}
+        publish-profile: ${{  secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
